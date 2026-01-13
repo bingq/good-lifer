@@ -31,7 +31,7 @@ const config: ExpoConfig = {
   ios: {
     supportsTablet: true,
     bundleIdentifier: env.iosBundleId,
-    buildNumber: "1", // Increment for each App Store submission
+    // buildNumber is managed remotely when appVersionSource is "remote"
     // App Store information
     infoPlist: {
       // Privacy descriptions required by App Store
@@ -124,6 +124,11 @@ const config: ExpoConfig = {
   experiments: {
     typedRoutes: true,
     reactCompiler: true,
+  },
+  extra: {
+    eas: {
+      projectId: "2cba94e2-a013-44db-8071-f38be4889eb8",
+    },
   },
 };
 
