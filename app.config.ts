@@ -29,14 +29,12 @@ const config: ExpoConfig = {
   userInterfaceStyle: "automatic",
   newArchEnabled: true,
   ios: {
-    supportsTablet: true,
+    supportsTablet: true, // Temporarily disabled for App Store review - avoids iPad screenshot requirement
     bundleIdentifier: env.iosBundleId,
-    // buildNumber is managed remotely when appVersionSource is "remote"
+    buildNumber: "8", // Increment for App Store resubmission after review feedback
     // App Store information
     infoPlist: {
       // Privacy descriptions required by App Store
-      NSUserTrackingUsageDescription: "Good Lifer does not track users. This permission is not used.",
-      NSMicrophoneUsageDescription: "Good Lifer does not use the microphone. This permission is not used.",
       NSCameraUsageDescription: "Good Lifer does not use the camera. This permission is not used.",
       NSPhotoLibraryUsageDescription: "Good Lifer does not access your photo library. This permission is not used.",
       // Required for App Store
@@ -83,19 +81,6 @@ const config: ExpoConfig = {
   },
   plugins: [
     "expo-router",
-    [
-      "expo-audio",
-      {
-        microphonePermission: "Allow $(PRODUCT_NAME) to access your microphone.",
-      },
-    ],
-    [
-      "expo-video",
-      {
-        supportsBackgroundPlayback: true,
-        supportsPictureInPicture: true,
-      },
-    ],
     [
       "expo-splash-screen",
       {
