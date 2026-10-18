@@ -1,6 +1,6 @@
 # Good Lifer
 
-A calm, private diary for iPhone, iPad and Mac. One page for each day, saved as plain files in your own iCloud Drive.
+A calm, private diary for iPhone, iPad and Mac. One page for each day, saved as plain files you own — on your device, or synced through your own iCloud Drive with Good Lifer Pro.
 
 [Download on the App Store](https://apps.apple.com/app/good-lifer/id6757751105) · [Website](https://bingq.github.io/good-lifer/) · [Privacy Policy](https://bingq.github.io/good-lifer/privacy.html)
 
@@ -13,10 +13,10 @@ Email **geldqb@gmail.com**, or [open an issue](https://github.com/bingq/good-lif
 ### FAQ
 
 **Where are my entries stored?**
-When iCloud Drive is on, in a "Good Lifer" folder in your iCloud Drive, private to your Apple account. Otherwise only on that device.
+On your device as plain files. With Good Lifer Pro and iCloud Drive on, in a "Good Lifer" folder in your iCloud Drive, private to your Apple account.
 
 **How do I sync between iPhone and Mac?**
-Use the same Apple account on each device with iCloud Drive turned on.
+Sync is part of Good Lifer Pro (one-time purchase). Use the same Apple account on each device with iCloud Drive turned on.
 
 **What if I edit the same day on two devices?**
 Nothing is lost. If both changed while offline, Good Lifer keeps both versions, separated by a line.
