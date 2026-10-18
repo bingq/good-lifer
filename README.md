@@ -1,72 +1,34 @@
 # Good Lifer
 
-Track your daily achievements and long-term goals. A privacy-focused habit tracking app for iOS.
+A calm, private diary for iPhone, iPad and Mac. One page for each day, saved as plain files in your own iCloud Drive.
 
-## About
+[Download on the App Store](https://apps.apple.com/app/good-lifer/id6757751105) · [Website](https://bingq.github.io/good-lifer/) · [Privacy Policy](https://bingq.github.io/good-lifer/privacy.html)
 
-Good Lifer helps you build better habits and achieve your goals through simple daily tracking and long-term project management. All your data stays on your device - no accounts, no tracking, just pure productivity.
-
-## Features
-
-- **Daily Achievement Tracking** - Log your wins across multiple categories
-- **Long-term Project Management** - Track progress with visual indicators
-- **Tree Hole** - Private space for your thoughts
-- **Beautiful Stats** - View progress by day, week, month, or year
-- **Voice Input** - Support for English, Chinese, and Japanese
-- **Dark Mode** - Easy on your eyes
-- **Privacy First** - All data stored locally on your device
-
-## Download
-
-[Download on the App Store](https://apps.apple.com/app/good-lifer/id6757751105)
+This repository holds the public support pages for Good Lifer. The app's source code is private.
 
 ## Support
 
-Having trouble? Need help? We're here for you!
+Email **geldqb@gmail.com**, or [open an issue](https://github.com/bingq/good-lifer/issues) to report a bug or suggest a feature.
 
-### Contact
+### FAQ
 
-- **Email**: geldqb@gmail.com
-- **GitHub Issues**: [Report a bug or request a feature](https://github.com/bingq/good-lifer/issues)
+**Where are my entries stored?**
+When iCloud Drive is on, in a "Good Lifer" folder in your iCloud Drive, private to your Apple account. Otherwise only on that device.
 
-### Frequently Asked Questions
+**How do I sync between iPhone and Mac?**
+Use the same Apple account on each device with iCloud Drive turned on.
 
-**Q: How do I back up my data?**
-A: Go to Settings → Data Management → Export Data to create a JSON backup file.
+**What if I edit the same day on two devices?**
+Nothing is lost. If both changed while offline, Good Lifer keeps both versions, separated by a line.
 
-**Q: Does Good Lifer sync across devices?**
-A: No. Good Lifer is completely private and offline. All data stays on your device.
+**How do I back up my diary?**
+Each day is an ordinary Markdown file. Copy the Good Lifer folder anywhere you like.
 
-**Q: Can I customize the categories?**
-A: Yes! Go to Settings → Manage Categories to add, edit, or delete categories.
+**I used the earlier version. What changed?**
+Version 1.0 is a complete redesign as a diary. Data from the earlier achievement-tracking version isn't carried over. Export it first from the earlier version: Settings → Data Management → Export Data.
 
-**Q: Is my data private?**
-A: Absolutely. All data is stored locally on your device. We don't collect, transmit, or have access to any of your data.
+## Privacy
 
-**Q: What languages are supported?**
-A: The app interface is in English. Voice input supports English, Chinese (中文), and Japanese (日本語).
+Good Lifer collects no data: no accounts, no analytics, no ads. See the full [privacy policy](https://bingq.github.io/good-lifer/privacy.html).
 
-### Privacy Policy
-
-Good Lifer respects your privacy. All data is stored locally on your device. We do not:
-- Collect any personal information
-- Track your usage
-- Share data with third parties
-- Require account creation
-- Use analytics or advertising
-
-For complete details, see [PRIVACY_POLICY.md](PRIVACY_POLICY.md)
-
-## Technical Details
-
-- Built with React Native and Expo
-- iOS 15.1 or later
-- Bundle ID: com.bing.goodlifer
-
-## License
-
-© 2026 Bing Qian. All rights reserved.
-
----
-
-Made with ❤️ for people who want to live better lives.
+© 2026 Bing Qian

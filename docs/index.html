@@ -1,169 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Good Lifer - Track Achievements, Reflect Privately</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            color: #333;
-            line-height: 1.6;
-        }
-        .hero {
-            background: linear-gradient(135deg, #E6F4FE, #f0f7ff);
-            text-align: center;
-            padding: 80px 20px 60px;
-        }
-        .hero img {
-            width: 120px;
-            height: 120px;
-            border-radius: 24px;
-            margin-bottom: 24px;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 12px;
-            color: #1a1a2e;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            color: #555;
-            max-width: 600px;
-            margin: 0 auto 32px;
-        }
-        .badge {
-            display: inline-block;
-        }
-        .badge img {
-            height: 50px;
-            width: auto;
-            border-radius: 0;
-        }
-        .features {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-        .features h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 40px;
-            color: #1a1a2e;
-        }
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 32px;
-        }
-        .feature {
-            text-align: center;
-            padding: 24px;
-        }
-        .feature .icon {
-            font-size: 2.5rem;
-            margin-bottom: 16px;
-        }
-        .feature h3 {
-            font-size: 1.2rem;
-            margin-bottom: 8px;
-            color: #1a1a2e;
-        }
-        .feature p {
-            color: #666;
-            font-size: 0.95rem;
-        }
-        .privacy {
-            background: #f8f9fa;
-            text-align: center;
-            padding: 60px 20px;
-        }
-        .privacy h2 {
-            font-size: 2rem;
-            margin-bottom: 16px;
-            color: #1a1a2e;
-        }
-        .privacy p {
-            color: #555;
-            max-width: 600px;
-            margin: 0 auto 24px;
-        }
-        .privacy a {
-            color: #007AFF;
-            text-decoration: none;
-        }
-        .privacy a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 32px 20px;
-            color: #999;
-            font-size: 0.85rem;
-        }
-        footer a {
-            color: #007AFF;
-            text-decoration: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Good Lifer</title>
+<meta name="description" content="Good Lifer is a calm, private diary for iPhone, iPad and Mac. Your pages stay on your devices.">
+<style>
+  :root {
+    --paper: #ffffff;
+    --soft: #f7f7f5;
+    --ink: #37352f;
+    --muted: #6f6e69;
+    --line: #e9e9e7;
+    --accent: #b8572e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #191919;
+      --soft: #202020;
+      --ink: #e6e6e3;
+      --muted: #9b9a97;
+      --line: #2f2f2f;
+      --accent: #d9774e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 72px 20px 40px; }
+  h1, h2 { font-family: ui-serif, "New York", Georgia, serif; font-weight: 500; line-height: 1.2; }
+  h1 { font-size: 44px; margin: 20px 0 8px; }
+  h2 { font-size: 28px; margin: 56px 0 12px; }
+  h3 { font-size: 17px; margin: 24px 0 4px; }
+  p { margin: 0 0 12px; }
+  a { color: var(--accent); }
+  .icon { width: 88px; height: 88px; border-radius: 20px; border: 1px solid var(--line); }
+  .lead { font-size: 20px; color: var(--muted); }
+  .badge { display: inline-block; margin-top: 16px; }
+  .badge img { height: 48px; }
+  ul.features { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
+  ul.features li { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  ul.features strong { display: block; }
+  ul.features span { color: var(--muted); }
+  .note { background: var(--soft); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+  footer { max-width: 720px; margin: 0 auto; padding: 32px 20px 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+  @media (max-width: 480px) { h1 { font-size: 36px; } main { padding-top: 48px; } }
+</style>
 </head>
 <body>
-    <section class="hero">
-        <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663269033029/iCcoRTYRgPFLvepW.png" alt="Good Lifer icon">
-        <h1>Good Lifer</h1>
-        <p>Your personal wellness companion. Track daily achievements and reflect privately in a secure, offline-first journal.</p>
-        <!-- Uncomment and update when your app is live on the App Store -->
-        <!-- <a class="badge" href="https://apps.apple.com/app/good-lifer/id6757751105">
-            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-        </a> -->
-    </section>
+<main>
+  <img class="icon" src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663269033029/iCcoRTYRgPFLvepW.png" alt="Good Lifer app icon">
+  <h1>Good Lifer</h1>
+  <p class="lead">A calm, private diary for iPhone, iPad and Mac. One page for each day. Your pages stay on your devices.</p>
+  <a class="badge" href="https://apps.apple.com/app/good-lifer/id6757751105">
+    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+  </a>
 
-    <section class="features">
-        <h2>Features</h2>
-        <div class="feature-grid">
-            <div class="feature">
-                <div class="icon">&#127942;</div>
-                <h3>Achievement Tracking</h3>
-                <p>Log daily accomplishments across categories like Study, Exercise, Reading, Work, and more.</p>
-            </div>
-            <div class="feature">
-                <div class="icon">&#127795;</div>
-                <h3>Tree Hole Journaling</h3>
-                <p>A private space for your thoughts and reflections. Everything stays on your device.</p>
-            </div>
-            <div class="feature">
-                <div class="icon">&#128200;</div>
-                <h3>Progress Summaries</h3>
-                <p>View weekly, monthly, and yearly breakdowns to celebrate your growth over time.</p>
-            </div>
-            <div class="feature">
-                <div class="icon">&#128274;</div>
-                <h3>Privacy First</h3>
-                <p>All data stored locally. No accounts, no tracking, no internet required.</p>
-            </div>
-            <div class="feature">
-                <div class="icon">&#127912;</div>
-                <h3>Category Organization</h3>
-                <p>Color-coded categories to visualize balance across different areas of your life.</p>
-            </div>
-            <div class="feature">
-                <div class="icon">&#128247;</div>
-                <h3>Offline First</h3>
-                <p>Works completely offline. Your data never leaves your device.</p>
-            </div>
-        </div>
-    </section>
+  <h2>What it does</h2>
+  <ul class="features">
+    <li><strong>One page per day</strong><span>Open the app and today's page is ready. Add a mood, a place and tags, then just write.</span></li>
+    <li><strong>Calendar</strong><span>See your month at a glance, with each day's mood and first line.</span></li>
+    <li><strong>iPhone, iPad and Mac</strong><span>A native app on each device. Your diary syncs through your own iCloud Drive.</span></li>
+    <li><strong>Plain files you own</strong><span>Every day is a normal Markdown file in a "Good Lifer" folder in iCloud Drive. Open it in Files or Finder, back it up, or take it anywhere.</span></li>
+    <li><strong>Private by design</strong><span>No account, no ads, no tracking. We never see your diary.</span></li>
+  </ul>
 
-    <section class="privacy">
-        <h2>Your Privacy Matters</h2>
-        <p>Good Lifer stores all data locally on your device. We don't collect, track, or share any information. No accounts required. No internet needed.</p>
-        <a href="https://github.com/bingq/good-lifer/blob/main/PRIVACY_POLICY.md">Read our Privacy Policy</a>
-    </section>
+  <h2 id="support">Support</h2>
+  <p>Questions, problems or ideas? Email <a href="mailto:geldqb@gmail.com">geldqb@gmail.com</a>. I read every message.</p>
 
-    <footer>
-        <p>&copy; 2026 Good Lifer. All rights reserved.</p>
-        <p><a href="https://github.com/bingq/good-lifer">GitHub</a> &middot; <a href="https://github.com/bingq/good-lifer/issues">Support</a></p>
-    </footer>
+  <h3>Where are my entries stored?</h3>
+  <p>When iCloud Drive is on, in a folder called <strong>Good Lifer</strong> in your iCloud Drive. It's private to your Apple account. When iCloud Drive is off, the entries stay on that device only.</p>
+
+  <h3>How do I sync between iPhone and Mac?</h3>
+  <p>Sign in to the same Apple account on each device and turn on iCloud Drive. Entries written on one device appear on the others a few moments later.</p>
+
+  <h3>What happens if I edit the same day on two devices?</h3>
+  <p>Nothing is lost. If both versions changed while offline, Good Lifer keeps both, separated by a line, so you can tidy them up.</p>
+
+  <h3>How do I back up my diary?</h3>
+  <p>Your entries are ordinary files. Copy the Good Lifer folder from iCloud Drive (or the Files app) anywhere you like.</p>
+
+  <h3>I used the earlier version of Good Lifer. What changed?</h3>
+  <div class="note">
+    <p>Version 1.0 is a complete redesign: Good Lifer is now a diary for iPhone, iPad and Mac. Data from the earlier achievement-tracking version isn't carried over.</p>
+    <p style="margin:0">If you have entries you want to keep, open the earlier version <strong>before updating</strong> and use Settings → Data Management → Export Data.</p>
+  </div>
+
+  <h2>Privacy</h2>
+  <p>Good Lifer collects no data. Read the full <a href="privacy.html">privacy policy</a>.</p>
+</main>
+<footer>© 2026 Bing Qian · <a href="privacy.html">Privacy Policy</a> · <a href="mailto:geldqb@gmail.com">Contact</a></footer>
 </body>
 </html>
