@@ -25,7 +25,7 @@ Nothing is lost. If both changed while offline, Good Lifer keeps both versions, 
 Each day is an ordinary Markdown file. Copy the Good Lifer folder anywhere you like.
 
 **I used the earlier version. What changed?**
-Version 0.6 is a complete redesign as a diary. Data from the earlier achievement-tracking version isn't carried over. If there's anything you want to keep, take screenshots of the Stats and Projects screens in the earlier version before updating.
+Version 1.0 is a complete redesign as a diary. Data from the earlier achievement-tracking version isn't carried over. If there's anything you want to keep, take screenshots of the Stats and Projects screens in the earlier version before updating.
 
 ## Privacy
 
